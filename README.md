@@ -87,7 +87,3 @@ If you want to run the backend + Postgres stack:
 ```powershell
 docker compose up --build
 ```
-
-## License
-
-This repository is released under the MIT License. See `LICENSE`.
