@@ -80,14 +80,6 @@ Frontend dev URL:
 - `GET /current_session` - active session name
 - `WS /ws/attendance` - realtime attendance stream
 
-## Notes for GitHub Upload
-
-- Runtime data files are ignored:
-  - `backend/students.json`
-  - `backend/attendance.json`
-- `node_modules` and Python cache files are ignored
-- Keep secrets out of repo (no credentials in committed files)
-
 ## Docker (Optional)
 
 If you want to run the backend + Postgres stack:
