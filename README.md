@@ -23,7 +23,29 @@ It includes:
 - Node.js `18+` (current LTS recommended)
 - npm
 
-## Local Setup
+## Quick Start (Easiest Way)
+
+For a one-click setup and run:
+
+**Windows (PowerShell):**
+```powershell
+.\run.ps1
+```
+
+**Windows (Command Prompt):**
+```cmd
+run.bat
+```
+
+This will:
+- Install Python dependencies
+- Install Node.js dependencies  
+- Start both backend and frontend servers
+- Open the app in your browser
+
+Then visit: [http://127.0.0.1:5173](http://127.0.0.1:5173)
+
+## Manual Setup
 
 ### 1) Backend
 
