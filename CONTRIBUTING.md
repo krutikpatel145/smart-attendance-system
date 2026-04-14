@@ -4,13 +4,11 @@ Thanks for contributing to Smart Attendance System.
 
 ## Local Development
 
-1. Install backend dependencies:
-   - `cd backend`
-   - `python -m pip install -r requirements.txt`
-2. Install frontend dependencies:
-   - `cd frontend`
-   - `npm install`
-3. Run backend and frontend in separate terminals.
+1. Install dependencies from project root:
+   - `python install.py`
+2. Start app from project root:
+   - `python run.py`
+3. For debugging, you can still run backend and frontend in separate terminals.
 
 ## Pull Request Guidelines
 

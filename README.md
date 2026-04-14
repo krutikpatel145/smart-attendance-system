@@ -24,38 +24,33 @@ It includes:
 - Node.js `18+` (current LTS recommended)
 - npm
 
-## Quick Start (Easiest Way)
+## Quick Start (Recommended)
 
-For a one-click setup and run:
-
-**Windows (PowerShell):**
+From the project root, run:
 
 ```powershell
-.\run.ps1
+python install.py
+python run.py
 ```
-
-**Windows (Command Prompt):**
-
-```cmd
-run.bat
-```
-
-This will:
-
-- Install Python dependencies
-- Install Node.js dependencies
-- Start both backend and frontend servers
-- Open the app in your browser
 
 Then visit: [https://127.0.0.1:5173](https://127.0.0.1:5173)
 
-## Manual Setup
+This installs dependencies once, then starts both backend and frontend in one terminal.
+
+## Quick Start (Windows one-click scripts)
+
+You can also use:
+
+- `.\run.ps1` (PowerShell)
+- `run.bat` (Command Prompt / double-click)
+
+## Manual Setup (Optional)
 
 ### 1) Backend
 
 ```powershell
-cd backend
 python -m pip install -r requirements.txt
+cd backend
 python -m uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
@@ -68,8 +63,8 @@ Backend health:
 Open a second terminal:
 
 ```powershell
+npm install --prefix frontend
 cd frontend
-npm install
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
 

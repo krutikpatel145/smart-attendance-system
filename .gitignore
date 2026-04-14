@@ -4,6 +4,9 @@ frontend/dist/
 frontend/.env.local
 frontend/.env.*.local
 
+# Environment variables
+.env
+
 # Python/Backend
 backend/venv/
 __pycache__/

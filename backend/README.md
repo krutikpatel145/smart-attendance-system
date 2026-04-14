@@ -5,10 +5,14 @@ Backend service for Smart Attendance System.
 ## Run Locally
 
 ```powershell
+python -m pip install -r ../requirements.txt
 cd backend
-python -m pip install -r requirements.txt
 python -m uvicorn main:app --host 127.0.0.1 --port 8000
 ```
+
+For the simplest full-project flow, use root scripts:
+- `python install.py`
+- `python run.py`
 
 ## Main Features
 

@@ -5,8 +5,8 @@ Frontend client for Smart Attendance System.
 ## Run Locally
 
 ```powershell
+npm install --prefix frontend
 cd frontend
-npm install
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
@@ -26,3 +26,7 @@ Vite proxy is configured in `vite.config.ts`:
 - `/ws` -> `ws://localhost:8000`
 
 Run the backend service on port `8000` for local development.
+
+For the simplest full-project flow, use root scripts:
+- `python install.py`
+- `python run.py`
