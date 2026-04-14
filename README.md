@@ -2,6 +2,7 @@
 
 Smart Attendance System is a full-stack project for webcam-based attendance tracking.
 It includes:
+
 - A `FastAPI` backend for enrollment, attendance logs, student management, and websocket frame processing
 - A `React + Vite + TypeScript` frontend for UI and camera interaction
 
@@ -28,22 +29,25 @@ It includes:
 For a one-click setup and run:
 
 **Windows (PowerShell):**
+
 ```powershell
 .\run.ps1
 ```
 
 **Windows (Command Prompt):**
+
 ```cmd
 run.bat
 ```
 
 This will:
+
 - Install Python dependencies
-- Install Node.js dependencies  
+- Install Node.js dependencies
 - Start both backend and frontend servers
 - Open the app in your browser
 
-Then visit: [http://127.0.0.1:5173](http://127.0.0.1:5173)
+Then visit: [https://127.0.0.1:5173](https://127.0.0.1:5173)
 
 ## Manual Setup
 
@@ -56,6 +60,7 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
 Backend health:
+
 - [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ### 2) Frontend
@@ -69,6 +74,7 @@ npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
 Frontend dev URL:
+
 - [https://127.0.0.1:5173/](https://127.0.0.1:5173/)
 
 ## API Quick Endpoints
