@@ -131,7 +131,7 @@ function App() {
           if (face.just_marked) {
             setIsScanning(false);
             setSuccessMessage(
-              `Attendance successfully marked for ${face.student.name}`,
+              `Attendance successfully marked for ${face.student?.name || "Unknown"}`,
             );
             setTimeout(() => setSuccessMessage(null), 5000);
           }
@@ -164,7 +164,7 @@ function App() {
           ctx.fillStyle = "#000000";
           ctx.font = "bold 12px sans-serif";
           if (isKnown && isLive) {
-            ctx.fillText(face.student.name, canvas.width - x - w + 6, y - 22);
+            ctx.fillText(face.student?.name || "Unknown", canvas.width - x - w + 6, y - 22);
             ctx.fillText(
               `Conf: ${face.confidence}%`,
               canvas.width - x - w + 6,

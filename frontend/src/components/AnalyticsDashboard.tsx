@@ -8,6 +8,7 @@ interface AttendanceLog {
   enrollment: string;
   branch: string;
   timestamp: string;
+  session_id: string;
 }
 
 interface Student {
